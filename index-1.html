@@ -1,0 +1,291 @@
+```html
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymass eSIM - プライバシーを重視したeSIM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 2px solid #333;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #00d4ff;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #aaa;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 40px 0;
+            border-bottom: 1px solid #333;
+        }
+
+        section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #00d4ff;
+            border-left: 4px solid #00d4ff;
+            padding-left: 15px;
+        }
+
+        .about {
+            background: #0a0a0a;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .price-card {
+            background: #1a1a1a;
+            padding: 25px;
+            border-radius: 8px;
+            border: 2px solid #333;
+            text-align: center;
+        }
+
+        .price-card h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #00d4ff;
+        }
+
+        .price-card .amount {
+            font-size: 32px;
+            font-weight: bold;
+            color: #00d4ff;
+            margin-bottom: 10px;
+        }
+
+        .price-card p {
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        .contact-info {
+            background: #0a0a0a;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+            color: #ddd;
+        }
+
+        .contact-link {
+            color: #00d4ff;
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .step {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #00d4ff;
+        }
+
+        .step h3 {
+            color: #00d4ff;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .step p {
+            color: #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .devices p {
+            color: #ddd;
+            margin-bottom: 10px;
+        }
+
+        .service-info {
+            background: #0a0a0a;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .service-info p {
+            color: #ddd;
+            line-height: 1.8;
+        }
+
+        footer {
+            background: #0a0a0a;
+            padding: 30px 20px;
+            text-align: center;
+            border-top: 1px solid #333;
+            color: #888;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 24px;
+            }
+
+            header p {
+                font-size: 16px;
+            }
+
+            section h2 {
+                font-size: 20px;
+            }
+
+            .pricing {
+                grid-template-columns: 1fr;
+            }
+
+            .price-card .amount {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Anonymass　eSIM</h1>
+        <p>プライバシーを重視したeSIM</p>
+    </header>
+
+    <div class="container">
+        <!-- About Section -->
+        <section>
+            <div class="about">
+                <p>Anonymass eSIMとは、匿名性の高いeSIMで貴方のプライバシーを守ります。</p>
+                <p>当社独自のSIM発行サービスを提供致します。</p>
+                <p><strong>万が一の特定、追跡不可。オンライン決済。</strong></p>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section>
+            <h2>価格</h2>
+            <div class="pricing" style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px;">
+                <div class="price-card">
+                    <h3>30日間/10GB</h3>
+                    <div class="amount">￥20,000</div>
+                </div>
+                <div class="price-card">
+                    <h3>30日間/20GB</h3>
+                    <div class="amount">￥40,000</div>
+                </div>
+            </div>
+            <div class="contact-info">
+                <p>その他プランもご用意しております。</p>
+                <p><strong>詳しくはお問い合わせくださいませ。</strong></p>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section>
+            <h2>購入からご利用まで</h2>
+            <div class="steps">
+                <div class="step">
+                    <h3>01 お問い合わせ</h3>
+                    <p>各メッセージフォームからお問い合わせ下さいませ。</p>
+                </div>
+                <div class="step">
+                    <h3>02 お支払い方法</h3>
+                    <p>注文後、お客様と支払い方法を確認、確定致します。</p>
+                </div>
+                <div class="step">
+                    <h3>03 お支払い</h3>
+                    <p>料金のお支払いをお願い致します。<br><strong>※USDT 対応可。</strong></p>
+                </div>
+                <div class="step">
+                    <h3>04 eSIM発行</h3>
+                    <p>支払い確認取れ次第、開通用QRコード発行します。<br><strong>※10分～30分前後で発行まで行います。ご予約が殺到している場合はお時間要する場合もございます。</strong></p>
+                </div>
+                <div class="step">
+                    <h3>05 開通</h3>
+                    <p>ご利用ガイドに沿ってeSIMを設定し開通お願い致します。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Devices Section -->
+        <section>
+            <h2>対応端末</h2>
+            <div class="devices">
+                <p><strong>iPhone / Android / Ghost phone</strong></p>
+                <p style="color: #888; font-size: 14px;">※eSIM対応端末に限ります。</p>
+            </div>
+        </section>
+
+        <!-- After Service Section -->
+        <section>
+            <h2>アフターサービス</h2>
+            <div class="service-info">
+                <p>データ残容量が1GBになり次第、随時通知致します。</p>
+                <p>ご利用状況を確認しながら、安心してサービスをご利用いただけます。</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section>
+            <h2>お問い合わせ先</h2>
+            <div class="contact-info">
+                <p><strong>Signal</strong><br><span class="contact-link">yano3ta</span></p>
+                <p style="margin-top: 15px;"><strong>Telegram</strong><br><a href="https://t.me/yano24san" class="contact-link">https://t.me/yano24san</a></p>
+                <p style="margin-top: 15px; color: #aaa;">お気軽にお問い合わせ下さいませ。</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Anonymass eSIM. All rights reserved.</p>
+    </footer>
+</body>
+</html>
